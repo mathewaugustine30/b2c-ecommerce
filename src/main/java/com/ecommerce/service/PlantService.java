@@ -8,14 +8,7 @@ import java.util.List;
 
 @Service
 public class PlantService {
-    private List<Plant> plants = new ArrayList<>(){
-        {
-            add(new Plant(1L, "plant1", "this is plant1"));
-            add(new Plant(2L, "plant2", "this is plant2"));
-            add(new Plant(3L, "plant3", "this is plant3"));
-        }
-
-    };
+    private static List<Plant> plants = new ArrayList<>();
     public List<Plant> getAll() {
         return plants;
     }

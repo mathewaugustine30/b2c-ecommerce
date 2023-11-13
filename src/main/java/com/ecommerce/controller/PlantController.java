@@ -29,7 +29,7 @@ public class PlantController implements PlantApi {
     @Override
     @PostMapping
     public ResponseEntity<Void> addPlant(Plant plant) {
-        var result = service.addPlant(plant);
+        int result = service.addPlant(plant);
         if (result == -1)
             return new ResponseEntity<>(HttpStatus.CONFLICT);
         return new ResponseEntity<>(HttpStatus.CREATED);
