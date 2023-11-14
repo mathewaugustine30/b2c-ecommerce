@@ -16,6 +16,7 @@ import com.ecommerce.service.ProductCategoryService;
 @RestController
 @RequestMapping("/api/productcategories")
 public class ProductCategoryController {
+
 	@Autowired
 	ProductCategoryService productCategoryService;
 

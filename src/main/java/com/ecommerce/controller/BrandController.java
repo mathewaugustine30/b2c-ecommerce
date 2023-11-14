@@ -30,7 +30,7 @@ public class BrandController {
 			description = "fetches all plant entities and their data from data source")
 	@ApiResponses(value = {
 			@ApiResponse(responseCode = "200", description = "successful operation")
-	})*/
+	}) */
 	public ResponseEntity<List<Brand>> findAll() {
 		List<Brand> list = brandService.findAll();
 
